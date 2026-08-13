@@ -1,0 +1,27 @@
+Feature,Importance
+numerical__Cost of Production (`/Quintal) C2,0.3860579892747072
+categorical__Crop_SUGARCANE,0.35676800705645006
+numerical__Cost of Cultivation (`/Hectare) A2+FL,0.12204136951463684
+numerical__Cost of Cultivation (`/Hectare) C2,0.12029209620735923
+categorical__State_Uttar Pradesh,0.00931569129987974
+categorical__State_Maharashtra,0.0015246384431641263
+categorical__State_Karnataka,0.0013864596495551486
+categorical__State_Andhra Pradesh,0.0013465468106591185
+categorical__State_Tamil Nadu,0.0009359804804501784
+categorical__State_Haryana,9.298992633495994e-05
+categorical__Crop_MAIZE,4.843801854287991e-05
+categorical__State_Punjab,4.764894078919102e-05
+categorical__Crop_PADDY,3.363418321744924e-05
+categorical__State_Madhya Pradesh,2.164772841023675e-05
+categorical__Crop_GROUNDNUT,1.800154389370842e-05
+categorical__Crop_ARHAR,1.761275871886675e-05
+categorical__Crop_COTTON,1.57954566015211e-05
+categorical__Crop_GRAM,9.219915595701157e-06
+categorical__State_Rajasthan,9.056076481823818e-06
+categorical__Crop_WHEAT,5.806803762995568e-06
+categorical__State_Orissa,3.6108740646540445e-06
+categorical__State_Bihar,3.1618533412947084e-06
+categorical__Crop_MOONG,2.1854687651384846e-06
+categorical__Crop_RAPESEED AND MUSTARD,1.2503206264544994e-06
+categorical__State_Gujarat,6.34597972962063e-07
+categorical__State_West Bengal,5.267960185430697e-07

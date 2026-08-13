@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Agriculture Intelligence System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <div class="brand-logo">🌾</div>
+
+        <div>
+            <h2>Smart Agriculture</h2>
+            <p>Intelligence System</p>
+        </div>
+
+    </div>
+
+
+    <div class="sidebar-line"></div>
+
+
+    <div class="navigation">
+
+        <p class="nav-heading">NAVIGATION</p>
+
+        <button class="nav-item active"
+                onclick="showPage('dashboard', this)">
+            🏠
+            <span>Dashboard</span>
+        </button>
+
+        <button class="nav-item"
+                onclick="showPage('prediction', this)">
+            🌱
+            <span>Crop Prediction</span>
+        </button>
+
+        <button class="nav-item"
+                onclick="showPage('analysis', this)">
+            📊
+            <span>Data Analysis</span>
+        </button>
+
+        <button class="nav-item"
+                onclick="showPage('performance', this)">
+            🤖
+            <span>Model Performance</span>
+        </button>
+
+        <button class="nav-item"
+                onclick="showPage('features', this)">
+            🔍
+            <span>Feature Importance</span>
+        </button>
+
+    </div>
+
+
+    <div class="sidebar-bottom">
+
+        <span>Machine Learning Model</span>
+
+        <strong>Random Forest</strong>
+
+        <small>Crop Yield Prediction</small>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div class="topbar-title">
+            Smart Agriculture
+        </div>
+
+        <div class="topbar-actions">
+
+            <button class="icon-button">🔔</button>
+
+            <div class="profile">
+                👨‍🌾
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =================================================
+         DASHBOARD
+    ================================================== -->
+
+    <section id="dashboard" class="page active-page">
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🌱 AI POWERED AGRICULTURE
+                </span>
+
+                <h1>
+                    Smart Agriculture
+                    <br>
+                    Intelligence System
+                </h1>
+
+                <p>
+                    AI-powered crop yield prediction and
+                    agricultural data analytics for smarter
+                    farming decisions.
+                </p>
+
+                <button class="primary-button"
+                        onclick="openPrediction()">
+
+                    🌾 Predict Crop Yield
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="sun"></div>
+
+                <div class="field field-1"></div>
+                <div class="field field-2"></div>
+                <div class="field field-3"></div>
+
+                <div class="plant">🌱</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+
+        <div class="section-header">
+
+            <div>
+                <h2>Agriculture Overview</h2>
+
+                <p>
+                    A quick overview of the agricultural
+                    dataset and prediction model.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- KPI CARDS -->
+
+        <div class="kpi-grid">
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon green">
+                    📋
+                </div>
+
+                <p>DATASET RECORDS</p>
+
+                <h3>49</h3>
+
+                <span>
+                    Agricultural observations
+                </span>
+
+            </div>
+
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon yellow">
+                    🌾
+                </div>
+
+                <p>CROPS</p>
+
+                <h3>10</h3>
+
+                <span>
+                    Different crop types
+                </span>
+
+            </div>
+
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon blue">
+                    📍
+                </div>
+
+                <p>STATES</p>
+
+                <h3>13</h3>
+
+                <span>
+                    Agricultural regions
+                </span>
+
+            </div>
+
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon purple">
+                    🎯
+                </div>
+
+                <p>BEST R² SCORE</p>
+
+                <h3>0.958</h3>
+
+                <span>
+                    Random Forest
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFORMATION CARDS -->
+
+        <div class="info-grid">
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Average Crop Yield
+                </h3>
+
+                <p>
+                    The average yield observed across all
+                    crops and states in the dataset.
+                </p>
+
+                <div class="info-number">
+                    98.09
+                    <small>quintal/hectare</small>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    Best Performing Model
+                </h3>
+
+                <p>
+                    Random Forest achieved the strongest
+                    overall performance among the tested
+                    machine learning models.
+                </p>
+
+                <div class="model-badge">
+                    Random Forest
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <div class="feature-section">
+
+            <div>
+
+                <span class="small-label">
+                    MACHINE LEARNING
+                </span>
+
+                <h2>
+                    Turning agricultural data
+                    into useful insights.
+                </h2>
+
+                <p>
+                    The system analyzes crop, state and
+                    cultivation-cost information to estimate
+                    expected crop yield.
+                </p>
+
+                <button class="secondary-button"
+                        onclick="openPrediction()">
+
+                    Explore Prediction →
+
+                </button>
+
+            </div>
+
+
+            <div class="feature-visual">
+
+                <div class="circle-chart">
+
+                    <div>
+                        <strong>95.8%</strong>
+                        <span>Model Score</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CROP PREDICTION
+    ================================================== -->
+
+    <section id="prediction" class="page">
+
+        <div class="page-title">
+
+            <span>🌱</span>
+
+            <div>
+                <h1>Crop Yield Prediction</h1>
+
+                <p>
+                    Enter crop and cultivation information
+                    to estimate expected yield.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="prediction-layout">
+
+            <div class="prediction-form">
+
+                <h2>Crop Information</h2>
+
+                <p class="form-description">
+                    Provide the following information
+                    for the prediction.
+                </p>
+
+
+                <label>
+                    Select Crop
+                </label>
+
+                <select id="crop">
+
+                    <option>WHEAT</option>
+                    <option>RICE</option>
+                    <option>ARHAR</option>
+                    <option>COTTON</option>
+                    <option>GRAM</option>
+                    <option>GROUNDNUT</option>
+                    <option>MAIZE</option>
+                    <option>MOONG</option>
+                    <option>PADDY</option>
+                    <option>SUGARCANE</option>
+
+                </select>
+
+
+                <label>
+                    Select State
+                </label>
+
+                <select id="state">
+
+                    <option>Maharashtra</option>
+                    <option>Punjab</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Karnataka</option>
+                    <option>Tamil Nadu</option>
+                    <option>Gujarat</option>
+                    <option>Madhya Pradesh</option>
+
+                </select>
+
+
+                <label>
+                    Cost of Cultivation A2+FL
+                    <span>₹ / Hectare</span>
+                </label>
+
+                <input
+                    id="costA2FL"
+                    type="number"
+                    value="20000"
+                >
+
+
+                <label>
+                    Cost of Cultivation C2
+                    <span>₹ / Hectare</span>
+                </label>
+
+                <input
+                    id="costC2"
+                    type="number"
+                    value="30000"
+                >
+
+
+                <label>
+                    Cost of Production C2
+                    <span>₹ / Quintal</span>
+                </label>
+
+                <input
+                    id="productionCost"
+                    type="number"
+                    value="1500"
+                >
+
+
+                <button class="predict-button"
+                        onclick="predictYield()">
+
+                    🌾 Predict Crop Yield
+
+                </button>
+
+            </div>
+
+
+            <div class="prediction-result">
+
+                <div class="result-top">
+                    AI PREDICTION
+                </div>
+
+                <div class="result-icon">
+                    🌾
+                </div>
+
+                <p>
+                    Estimated Crop Yield
+                </p>
+
+                <h2 id="predictionValue">
+                    —
+                </h2>
+
+                <span>
+                    Quintal / Hectare
+                </span>
+
+
+                <div class="result-divider"></div>
+
+
+                <div id="predictionMessage">
+
+                    Enter your crop information
+                    and generate a prediction.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         DATA ANALYSIS
+    ================================================== -->
+
+    <section id="analysis" class="page">
+
+        <div class="page-title">
+
+            <span>📊</span>
+
+            <div>
+                <h1>Data Analysis</h1>
+
+                <p>
+                    Explore agricultural production data.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <h2>Average Yield by Crop</h2>
+
+            <div class="fake-chart">
+
+                <div style="height:25%">
+                    <span>ARHAR</span>
+                </div>
+
+                <div style="height:40%">
+                    <span>COTTON</span>
+                </div>
+
+                <div style="height:28%">
+                    <span>GRAM</span>
+                </div>
+
+                <div style="height:30%">
+                    <span>GROUNDNUT</span>
+                </div>
+
+                <div style="height:55%">
+                    <span>MAIZE</span>
+                </div>
+
+                <div style="height:20%">
+                    <span>MOONG</span>
+                </div>
+
+                <div style="height:75%">
+                    <span>PADDY</span>
+                </div>
+
+                <div style="height:90%">
+                    <span>SUGARCANE</span>
+                </div>
+
+                <div style="height:45%">
+                    <span>WHEAT</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         MODEL PERFORMANCE
+    ================================================== -->
+
+    <section id="performance" class="page">
+
+        <div class="page-title">
+
+            <span>🤖</span>
+
+            <div>
+                <h1>Model Performance</h1>
+
+                <p>
+                    Comparison of machine learning models.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="performance-grid">
+
+            <div class="model-card best">
+
+                <span class="best-label">
+                    BEST MODEL
+                </span>
+
+                <div class="model-icon">
+                    🌲
+                </div>
+
+                <h2>Random Forest</h2>
+
+                <div class="score">
+                    0.958
+                </div>
+
+                <p>
+                    R² Score
+                </p>
+
+            </div>
+
+
+            <div class="model-card">
+
+                <div class="model-icon">
+                    📈
+                </div>
+
+                <h2>Gradient Boosting</h2>
+
+                <div class="score">
+                    0.967
+                </div>
+
+                <p>
+                    R² Score
+                </p>
+
+            </div>
+
+
+            <div class="model-card">
+
+                <div class="model-icon">
+                    🌳
+                </div>
+
+                <h2>Decision Tree</h2>
+
+                <div class="score">
+                    0.999
+                </div>
+
+                <p>
+                    R² Score
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FEATURE IMPORTANCE
+    ================================================== -->
+
+    <section id="features" class="page">
+
+        <div class="page-title">
+
+            <span>🔍</span>
+
+            <div>
+                <h1>Feature Importance</h1>
+
+                <p>
+                    Important variables used by the model.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="importance-card">
+
+            <div class="importance-row">
+
+                <div>
+                    Cost of Production C2
+                </div>
+
+                <div class="progress">
+                    <span style="width:88%"></span>
+                </div>
+
+                <strong>38.6%</strong>
+
+            </div>
+
+
+            <div class="importance-row">
+
+                <div>
+                    Crop – Sugarcane
+                </div>
+
+                <div class="progress">
+                    <span style="width:82%"></span>
+                </div>
+
+                <strong>35.7%</strong>
+
+            </div>
+
+
+            <div class="importance-row">
+
+                <div>
+                    Cultivation Cost A2+FL
+                </div>
+
+                <div class="progress">
+                    <span style="width:32%"></span>
+                </div>
+
+                <strong>12.2%</strong>
+
+            </div>
+
+
+            <div class="importance-row">
+
+                <div>
+                    Cultivation Cost C2
+                </div>
+
+                <div class="progress">
+                    <span style="width:31%"></span>
+                </div>
+
+                <strong>12.0%</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        🌾 Smart Agriculture Intelligence System
+
+        <span>
+            Machine Learning • Data Analytics • Smart Farming
+        </span>
+
+    </footer>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
